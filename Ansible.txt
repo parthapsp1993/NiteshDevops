@@ -29,6 +29,43 @@ Note: Ansible must be installed as a user (here ansadmin)
 
 check for ansible version
 
+ pip3 install ansible --user
+    2  ansible --version
+    3  ssh-keygen
+    4  ls
+    5  ssh-copy-id ansadmin@172.31.43.14
+    6  cd /etc/ansible
+    7  mkdir /etc/ansible
+    8  sudo mkdir /etc/ansible
+    9  suod vi /etc/ansible/hosts
+   10  sudo vi /etc/ansible/hosts
+   11  cd .ssh
+   12  ls
+   13   sudo vi /etc/ansible/hosts
+   14  ansible all -m ping
+   15  cd
+   16  ansible all -m ping
+   17  vi ansible.cfg
+   18  vi /etc/ansible
+   19  ls
+   20  pwd
+   21  ls
+   22  find ansible.cfg
+   23  sudo ansible.cfg
+   24  cat /etc/ansible/hosts
+   25  vi /etc/ansible/hosts
+   26  sudo vi /etc/ansible/hosts
+   27  ansible all -m ping
+   28  clear
+   29  pwd
+   30  sudo vi /etc/ansible/hosts
+   31  ansible all -m ping
+   32  sudo vi /etc/ansible/hosts
+   33  ansible --version
+   34  ls
+   35  ls -la
+
+
 ansible --version
 Log in as a ansadmin user on master and generate ssh key (on Control node)
 
