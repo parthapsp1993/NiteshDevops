@@ -9,3 +9,11 @@
     - name: checking php
       command: php -v
       when: php_install is success
+
+
+
+Step to run a playbook 
+
+ansible-playbook --syntax-check playbook_name.yml --->  check the syntax
+ansible-playbook playbook_name.yaml --check --- > dry run 
+ansible-playbook sampleplaybook.yaml  --- >executing the code
