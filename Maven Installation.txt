@@ -26,7 +26,7 @@ echo $PATH
 Check point
 logoff and login to check maven version Check maven version
 
-  mvn –version
+  mvn â€“version
 So far you have completed installation of maven software to support maven plugin on jenkins console. 
 Let's jump onto jenkins to complete remining steps.
 
