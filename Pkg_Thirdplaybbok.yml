@@ -1,5 +1,5 @@
 ---
- - hosts: local
+ - hosts: [linux-server]
    become: true
    tasks:
      - name: "installing lamp package"
@@ -20,7 +20,7 @@
        when: httpd_validation|success
 
      - name: "copying index file"
-       copy: src=index.html dest=/var/www/html/index.html
+       copy: src=/home/ansadmin/ansible/folder/index.html dest=/var/www/html/index.html
        when: httpd_validation|success
        notify:
           - Restart_httpd
@@ -28,7 +28,7 @@
      - name: "Updating httpd conf"
        lineinfile: dest=/etc/httpd/conf/httpd.conf state=present regexp="^Listen" line="Listen 8080"
        when: httpd_validation|success
-       notify: 
+       notify:
           - Restart_httpd
 
 
